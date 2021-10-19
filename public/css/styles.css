@@ -1,0 +1,315 @@
+/*GENERALES*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto',sans-serif;
+    box-sizing:border-box;
+}
+body{
+    background-color:#ebebeb;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*HEADER*/
+.main-header{
+    background-color: #EAC926;
+    padding:20px;
+    position:fixed;
+    top:0;
+    z-index:100;
+}
+.main-header-logo-lupa{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.logo{
+    width: 48%;
+}
+.buscador{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-right: 6%;
+}
+.input-buscador{
+    border:none;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+.boton-buscador{
+    border: none;
+    margin-left: -15px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.copy-header{
+    margin-top:4%;
+    text-align:center;
+    font-weight: 400;
+    font-size: 1rem;
+}
+.burguer-menu{
+    background-color: #1259c3;
+    display: block;
+    border-radius: 8px;
+    padding: 15px 0;
+    max-width: 50px;
+    margin: 0 auto;
+    margin-top:15px;
+    color:white;
+    text-align: center;
+    font-size: 18px;
+}
+.banner{
+    width:100%;
+    margin-top:220px;
+}
+.main-navbar{
+    display: none;
+}
+.main-navbar ul {
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+.main-navbar a {
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+header i{
+    margin: 8px;
+}
+.main-navbar i{
+    color: #1259c3;
+}
+
+
+/*MAIN*/
+main{
+    margin:0 auto;
+    width:90%;
+}
+.producto{
+    margin: 10px 0 20px 0;
+}
+.imagenes-articulos img{
+    width:100%;
+    background-color:white;
+}
+.caja-articulos{
+    border-top: 1px solid #ebebeb;
+    padding:15px;
+    background-color:white;
+    position: relative;
+}
+.mismo-renglon{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+}
+.precios{
+    font-size:18px;
+}
+.descuentos{
+    font-size: 14px;
+    color:green;
+    margin-left: 2%;
+}
+.decripciones{
+    font-size:16px;
+}
+.titulares{
+    font-size: 24px;
+    text-align:center;
+    margin:0 auto;
+    margin-bottom:30px;
+    margin-top: 40px;
+    color: #1259c3;
+}
+.fa-truck{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    color: #39b54a;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    position:absolute;
+    right: 20px;
+    top: -15px;
+}
+
+
+/*FOOTER*/
+footer{
+    background-color:white;
+    margin-top: 30px;
+}
+.cuerpos-texto{
+    font-size: 12px;
+    text-align: center;
+}
+.iconos-pie-pagina{
+    font-size: 2em;
+    color: #1259c3;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.section-iconos-pie-pagina{
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.copyright{
+    text-align: center;
+}
+
+
+/*MEDIA QUERIES*/
+
+/*TABLET*/
+@media(min-width:451px){
+    /*HEADER*/
+    .main-header-top-bar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .copy-header{
+        max-width:350px;
+        text-align: right;
+    }
+    .burguer-menu{
+        display: none;
+    }
+    .main-navbar{
+        display:flex;
+        justify-content: space-between;
+    }
+    .main-navbar ul{
+        display: flex;
+    }
+    .main-navbar li{
+        padding: 0 5px;
+    }
+    .banner{
+        margin-top:150px;
+    }
+    .logo{
+        width: 180px;
+    }
+    .input-buscador{
+        width: 250px;
+        height: 50px;
+        margin-left: 30px;
+    }
+    .boton-buscador{
+        height: 50px;
+    }
+    .buscador{
+        margin-right: 0;
+        margin-top: 20px;
+    }
+    /*MAIN*/
+    main section article{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .producto{
+        max-width: 200px;
+    }
+}
+
+/*LAPTOP*/
+@media(min-width:769px){
+    /*HEADER*/
+    .main-header{
+        width: 100%;
+        padding-bottom: 0;
+    }
+    .logo{
+        width: 350px;
+    }
+    .main-header-top-bar, .main-navbar{
+        max-width: 1200px;
+        margin: auto;
+    }
+    .main-header-top-bar{
+        align-items: center;
+        margin-top: 30px;
+    }
+    .copy-header{
+        max-width:none;
+        font-size: 18px;
+        font-weight: 400;
+        margin: 0;
+    }
+    .main-navbar{
+        margin-top: 25px;
+    }
+    .main-navbar li{
+        margin: 10px;
+    }
+    .main-navbar a{
+        font-size: 19px;
+        margin-top: 30px;
+    }
+    .banner{
+        margin-top:270px;
+    }
+    .input-buscador{
+        width: 350px;
+        height: 50px;
+        margin-left: 30px;
+    }
+    .boton-buscador{
+        height: 50px;
+    }
+    .buscador{
+        margin-right: 0;
+        margin-top: 20px;
+    }
+
+    /*MAIN*/
+    .producto{
+        max-width: 225px; 
+        
+    }
+    .descripciones{
+        display: none;
+    }
+    .caja-articulos:hover .descripciones{
+        display: flex;
+    }
+    .producto:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .fa-truck{
+        transition: transform 300ms;
+    }
+    .caja-articulos:hover .fa-truck{
+        transform: rotate(-90deg);
+    }
+
+
+    /*FOOTER*/
+    .footer-centrado{
+        display: flex;
+        padding: 20px 0;
+    }
+    .iconos-pie-pagina:hover{
+        color:#EAC926;
+    }
+}

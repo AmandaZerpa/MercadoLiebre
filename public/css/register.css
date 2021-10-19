@@ -1,0 +1,334 @@
+/*GENERALES*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto',sans-serif;
+    box-sizing:border-box;
+}
+body{
+    background-color:#ebebeb;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*HEADER*/
+.main-header{
+    background-color: #EAC926;
+    padding:20px;
+    position:fixed;
+    top:0;
+    z-index:100;
+}
+.main-header-logo-lupa{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.logo{
+    width: 48%;
+}
+.buscador{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-right: 6%;
+}
+.input-buscador{
+    border:none;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+.boton-buscador{
+    border: none;
+    margin-left: -15px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.copy-header{
+    margin-top:4%;
+    text-align:center;
+    font-weight: 400;
+    font-size: 1rem;
+}
+.burguer-menu{
+    background-color: #1259c3;
+    display: block;
+    border-radius: 8px;
+    padding: 15px 0;
+    max-width: 50px;
+    margin: 0 auto;
+    margin-top:15px;
+    color:white;
+    text-align: center;
+    font-size: 18px;
+}
+.main-navbar{
+    display: none;
+}
+.main-navbar ul {
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+.main-navbar a {
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+header i{
+    margin: 8px;
+}
+.main-navbar i{
+    color: #1259c3;
+}
+
+/*FORMULARIO*/
+.create-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-top: 1px solid #ebebeb;
+    padding:15px;
+    background-color:white;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    margin: 20px;
+    margin-top: 240px;
+}
+.control-formulario{
+    
+    align-self: center;
+}
+.control{
+    border-radius: 5px;
+    height: 30px;
+    width: 250px;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    margin-top:10px;
+}
+.control-fecha-nacimiento{
+    border-radius: 5px;
+    height: 30px;
+    width: 250px;
+    padding-left: 20px;
+}
+
+.control:invalid{
+    border: red 1px solid;
+}
+/*.advertencia::before{
+    content: "Debe contener...";
+    color: white;
+    background-color: black;
+}*/
+.intereses{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+.cajitas-intereses{
+    margin-right: 15px;
+}
+.tipo-usuario{
+    font-size: 20px;
+}
+.circulos-usuario{
+    margin: 0 8px;
+}
+.titulo-principal{
+    margin-bottom: 15px;
+    color:#1259c3;
+}
+.titulos{
+    align-self: flex-start;
+    margin-left: 45px;
+    margin-bottom: 15px;
+    color:#1259c3;
+}
+.archivos{
+    margin-left: 20px;
+    font-size: 15px;
+    width: 80%;
+}
+.botones{
+    display: flex;
+}
+.boton-formulario{
+    font-size: 20px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1259c3;
+    color: white;
+    margin-right: 20px;
+}
+.boton-formulario a{
+    text-decoration: none;
+    color: white;
+}
+.boton-formulario a:hover{
+    color: white;
+}
+.boton-formulario a:visited{
+    color: white;
+}
+
+/*FOOTER*/
+footer{
+    background-color:white;
+    margin-top: 30px;
+}
+.cuerpos-texto{
+    font-size: 12px;
+    text-align: center;
+}
+.iconos-pie-pagina{
+    font-size: 2em;
+    color: #1259c3;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.section-iconos-pie-pagina{
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.copyright{
+    text-align: center;
+}
+
+
+/*MEDIA QUERIES*/
+
+/*TABLET*/
+@media(min-width:451px){
+    /*HEADER*/
+    .main-header-top-bar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .copy-header{
+        max-width:350px;
+        text-align: right;
+    }
+    .burguer-menu{
+        display: none;
+    }
+    .main-navbar{
+        display:flex;
+        justify-content: space-between;
+    }
+    .main-navbar ul{
+        display: flex;
+    }
+    .main-navbar li{
+        padding: 0 5px;
+    }
+
+    /*FORMULARIO*/
+
+    .create-form{
+        margin-top: 200px;
+    }
+    .titulos{
+        margin-left: 200px;
+    }
+    .control{
+        height: 40px;
+        width: 300px;
+        margin-bottom: 15px;
+        margin-top:10px;
+    }
+    .control-fecha-nacimiento{
+        height: 40px;
+        width: 300px;
+    }
+}
+
+/*LAPTOP*/
+@media(min-width:769px){
+    /*HEADER*/
+    .main-header{
+        width: 100%;
+        padding-bottom: 0;
+    }
+    .logo{
+        width: 350px;
+    }
+    .main-header-top-bar, .main-navbar{
+        max-width: 1200px;
+        margin: auto;
+    }
+    .main-header-top-bar{
+        align-items: center;
+        margin-top: 30px;
+    }
+    .copy-header{
+        max-width:none;
+        font-size: 18px;
+        font-weight: 400;
+        margin: 0;
+    }
+    .main-navbar{
+        margin-top: 25px;
+    }
+    .main-navbar li{
+        margin: 10px;
+    }
+    .main-navbar a{
+        font-size: 19px;
+        margin-top: 30px;
+    }
+    .input-buscador{
+        width: 350px;
+        height: 50px;
+        margin-left: 30px;
+    }
+    .boton-buscador{
+        height: 50px;
+    }
+    .buscador{
+        margin-right: 0;
+        margin-top: 20px;
+    }
+
+    /*FORMULARIO*/
+    .create-form{
+        margin:30px 180px;
+        margin-top: 280px;
+    }
+    .titulos{
+        align-self: left;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .control{
+        height: 50px;
+        width: 500px;
+        margin-bottom: 15px;
+        margin-top:10px;
+    }
+    .control-fecha-nacimiento{
+        height: 50px;
+        width: 500px;
+    }
+    .boton-formulario{
+        width: 100px;
+        height: 40px;
+    }
+
+    /*FOOTER*/
+    .footer-centrado{
+        display: flex;
+        padding: 20px 0;
+    }
+    .iconos-pie-pagina:hover{
+        color:#EAC926;
+    }
+}
