@@ -15,7 +15,7 @@ rel="stylesheet">
             <div class="main-header-logo-lupa">
                 <img src="/images/logo-mercado-liebre.svg" alt="Logo" class="logo">
                 <div class="buscador">
-                        <input type="text" placeholder="Buscar productos,marcas" class="input-buscador">
+                        <input type="text" placeholder="Buscar productos" class="input-buscador">
                         <button class="boton-buscador"><i class="fas fa-search"></i></button>
                 </div>
             </div>
@@ -52,17 +52,16 @@ rel="stylesheet">
             </ul>
         </nav>
     </header>
-    <form class="create-form">
+    <form ation="/" method="POST" class="create-form">
         <h2 class="titulo-principal">Inicia sesión</h2>
         <div class="control-formulario">
-            <input type="text" name="nombreUsuario" placeholder="Nombre de usuari@" class="control">
+            <input type="text" name="nombreUsuario" placeholder="Nombre de usuari@" class="control" required>
         </div>
         <div class="control-formulario">
-            <input type="password" name="contrasenia" id="" placeholder="Contraseña" class="control">
+            <input type="password" name="contrasenia" id="" placeholder="Contraseña" class="control" required>
         </div>
         <div class="div-boton">
-            <button type="submit"  class="boton-formulario">
-                <a href="./">Enviar</a>
+            <button type="submit"  class="boton-formulario">Enviar
             </button>
         </div>
     </form>
@@ -70,17 +69,17 @@ rel="stylesheet">
         <div class="footer-centrado">
             <section class="section-iconos-pie-pagina">
                 <i class="fas fa-credit-card iconos-pie-pagina"></i>
-                <h3>Pagá con tarjeta o en efectivo</h3>
+                <h3 class="h3-pie-pagina">Pagá con tarjeta o en efectivo</h3>
                 <p class="cuerpos-texto">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
             </section>
             <section class=" section-iconos-pie-pagina">
                 <i class="fas fa-gift iconos-pie-pagina"></i>
-                <h3>Envío gratis desde $2500</h3>
+                <h3 class="h3-pie-pagina">Envío gratis desde $2500</h3>
                 <p class="cuerpos-texto">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
             </section>
             <section class=" section-iconos-pie-pagina">
                 <i class="fas fa-user-shield iconos-pie-pagina"></i>
-                <h3>Seguridad, de principio a fin</h3>
+                <h3 class="h3-pie-pagina">Seguridad, de principio a fin</h3>
                 <p class="cuerpos-texto">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
             </section>
         </div>

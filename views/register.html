@@ -15,7 +15,7 @@ rel="stylesheet">
             <div class="main-header-logo-lupa">
                 <img src="/images/logo-mercado-liebre.svg" alt="Logo" class="logo">
                 <div class="buscador">
-                    <input type="text" placeholder="Buscar productos,marcas" class="input-buscador">
+                    <input type="text" placeholder="Buscar productos" class="input-buscador">
                     <button class="boton-buscador"><i class="fas fa-search"></i></button>
                 </div>
             </div>
@@ -53,27 +53,31 @@ rel="stylesheet">
         </nav>
     </header>
     <main>
-        <form class="create-form">
+        <form action="/" method="POST" class="create-form">
             <h2 class=" titulo-principal">Creá tu cuenta</h2>
-            <div class="control-formulario advertencia">
-                <input type="text" name="nombre" value="" placeholder="Nombre y apellido" class="control" required>
+            <div class="control-formulario">
+                <input type="text" name="nombre" value="" placeholder="Nombre y apellido" class="control" required minlength="5">
+                <div class="advertenciaNombre"></div>
             </div>
             <br>
-            <div class="control-formulario advertencia">
-                <input type="text" name="nombreUsuario" value="" placeholder="Nombre de usuario" class="control" required>
+            <div class="control-formulario">
+                <input type="text" name="nombreUsuario" value="" placeholder="Nombre de usuario" class="control" required minlength="5">
+                <div class="advertenciaNombreUsuario"></div>
             </div>
             <br>
-            <div class="control-formulario advertencia">
-                <input type="email" name="email" value="" placeholder="E-mail" class="control" required>
+            <div class="control-formulario">
+                <input type="email" name="email" value="" placeholder="E-mail" class="control" required minlength="5">
+                <div class="advertenciaEmail"></div>
             </div>
             <br>
-            <div class="control-formulario advertencia">
-                <input type="text" name="domicilio" value="" placeholder="Domicilio" class="control" required>
+            <div class="control-formulario">
+                <input type="text" name="domicilio" value="" placeholder="Domicilio" class="control" required minlength="5">
+                <div class="advertenciaDomicilio"></div>
             </div>
             <br>
             <h3 class="titulos">Fecha de nacimiento</h3>
             <div class="control-formulario">
-                <input type="date" name="fechaNacimiento" id="" class="control-fecha-nacimiento">
+                <input type="date" name="fechaNacimiento" id="" class="control-fecha-nacimiento" required >
             </div>
             <br>
             <h3 class="titulos">Perfil del usuario</h3>
@@ -113,12 +117,14 @@ rel="stylesheet">
                 <input type="file" name="" accept=".jpg" multiple class="archivos">
             </div>
             <br>
-            <div class="control-formulario advertencia">
-                <input type="password" name="" id="" placeholder="Contraseña" class="control" required>
+            <div class="control-formulario">
+                <input type="password" name="" id="" placeholder="Contraseña" class="control" required minlength="5">
+                <div class="advertenciaPassword"></div>
             </div>
             <br>
-            <div class="control-formulario advertencia">
-                <input type="password" name="" id="" placeholder="Confirmar contraseña" class="control" required>
+            <div class="control-formulario">
+                <input type="password" name="" id="" placeholder="Confirmar contraseña" class="control" required minlength="5">
+                <div class="advertenciaPassword2"></div>
             </div>
             <br>
             <div class="botones">
@@ -126,7 +132,7 @@ rel="stylesheet">
                     <a href="#">Borrar</a>
                 </button>
                 <button type="submit"  class="boton-formulario">
-                    <a href="./">Enviar</a>
+                    Enviar
                 </button>
             </div>
         </form>
@@ -135,17 +141,17 @@ rel="stylesheet">
         <div class="footer-centrado">
             <section class="section-iconos-pie-pagina">
                 <i class="fas fa-credit-card iconos-pie-pagina"></i>
-                <h3>Pagá con tarjeta o en efectivo</h3>
+                <h3 class="h3-pie-pagina">Pagá con tarjeta o en efectivo</h3>
                 <p class="cuerpos-texto">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
             </section>
             <section class=" section-iconos-pie-pagina">
                 <i class="fas fa-gift iconos-pie-pagina"></i>
-                <h3>Envío gratis desde $2500</h3>
+                <h3 class="h3-pie-pagina">Envío gratis desde $2500</h3>
                 <p class="cuerpos-texto">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
             </section>
             <section class=" section-iconos-pie-pagina">
                 <i class="fas fa-user-shield iconos-pie-pagina"></i>
-                <h3>Seguridad, de principio a fin</h3>
+                <h3 class="h3-pie-pagina">Seguridad, de principio a fin</h3>
                 <p class="cuerpos-texto">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
             </section>
         </div>
