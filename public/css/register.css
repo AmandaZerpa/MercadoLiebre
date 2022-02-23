@@ -495,7 +495,7 @@ footer{
         color:#EAC926;
     }
 }
-@media (min-width:1439px){
+@media (min-width:1026px){
     .control:invalid+.advertenciaNombre::before{
         top: 80px;
         left: 880px;
