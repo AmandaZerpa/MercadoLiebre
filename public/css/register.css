@@ -498,31 +498,31 @@ footer{
 @media (min-width:1026px){
     .control:invalid+.advertenciaNombre::before{
         top: 80px;
-        left: 880px;
+        left: 680px;
         width: 150px;
     }
     .control:invalid+.advertenciaNombreUsuario::before{
         top: 180px;
-        left: 880px;
+        left: 680px;
         width: 150px;
     }
     .control:invalid+.advertenciaEmail::before{
         top: 275px;
-        left: 880px;
+        left: 680px;
         width: 150px;
     }
     .control:invalid+.advertenciaDomicilio::before{
-        left: 880px;
+        left: 680px;
         width: 150px;
     }
     .control:invalid+.advertenciaPassword::before{
         top: 920px;
-        left: 880px;
+        left: 680px;
         width: 150px;
     }
     .control:invalid+.advertenciaPassword2::before{
         top: 1020px;
-        left: 880px;
+        left: 680px;
         width: 150px;
     }
 }
