@@ -222,6 +222,7 @@ footer{
     /*FORMULARIO*/
     .create-form{
         margin:190px 100px;
+        margin-bottom: 20px;
     }
     .control{
         width: 240px;
@@ -300,6 +301,7 @@ footer{
     /*FORMULARIO*/
     .create-form{
         margin:370px 200px;
+        margin-bottom: 20px;
     }
     .control{
         width: 300px;
