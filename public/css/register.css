@@ -458,31 +458,31 @@ footer{
     }
     .control:invalid+.advertenciaNombre::before{
         top: 80px;
-        left: 510px;
+        left: 540px;
         width: 150px;
     }
     .control:invalid+.advertenciaNombreUsuario::before{
         top: 180px;
-        left: 510px;
+        left: 540px;
         width: 150px;
     }
     .control:invalid+.advertenciaEmail::before{
         top: 275px;
-        left: 510px;
+        left: 540px;
         width: 150px;
     }
     .control:invalid+.advertenciaDomicilio::before{
-        left: 510px;
+        left: 540px;
         width: 150px;
     }
     .control:invalid+.advertenciaPassword::before{
         top: 920px;
-        left: 510px;
+        left: 540px;
         width: 150px;
     }
     .control:invalid+.advertenciaPassword2::before{
         top: 1020px;
-        left: 510px;
+        left: 540px;
         width: 150px;
     }
 
@@ -498,31 +498,31 @@ footer{
 @media (min-width:1439px){
     .control:invalid+.advertenciaNombre::before{
         top: 80px;
-        left: 730px;
+        left: 830px;
         width: 150px;
     }
     .control:invalid+.advertenciaNombreUsuario::before{
         top: 180px;
-        left: 730px;
+        left: 830px;
         width: 150px;
     }
     .control:invalid+.advertenciaEmail::before{
         top: 275px;
-        left: 730px;
+        left: 830px;
         width: 150px;
     }
     .control:invalid+.advertenciaDomicilio::before{
-        left: 730px;
+        left: 830px;
         width: 150px;
     }
     .control:invalid+.advertenciaPassword::before{
         top: 920px;
-        left: 730px;
+        left: 830px;
         width: 150px;
     }
     .control:invalid+.advertenciaPassword2::before{
         top: 1020px;
-        left: 730px;
+        left: 830px;
         width: 150px;
     }
 }
